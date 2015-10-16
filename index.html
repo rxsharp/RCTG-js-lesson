@@ -1,0 +1,49 @@
+<!-- This is where the html will go -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>RCTG-js-lesson</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	 	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class = "title">JSON & JavaScript</h1>
+<h2>JSON Key value pair data</h2>
+<p class="description">Json data is written with name and value pairs.</p>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-xs-6">
+<h3>Example 1</h3>
+<p class="description">
+ JSON.parse(tipsDemo1) is used to convert JSON tipsDemo1 into a JavaScript object
+</p>
+<p id="demo1"></p>  
+  </div>
+  <div class="col-xs-6">
+  
+<h3>Example 2</h3>
+<p class="description">You can call objects in a JSON array. Example: The first tip is called with tipsDemo2[0]</p>
+<p id="demo2"></p>
+  </div>
+</div>
+</div>
+
+<h2>JS Random Number Generator</h2>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-xs-6">
+  <p><strong>Example:</strong> Generate random number, 1 to 10</p>
+<button class= "num-btn" onclick="randomNumber()">Try it</button>
+<p class = "random-result" id="random"></p>
+  </div>
+  <div class="col-xs-6">
+  <p><strong>Example:</strong> Generate random number, 1 to 20</p>
+<button class= "num-btn" onclick="randomNumber20()">Try it</button>
+<p class = "random-result" id="random20"></p>
+  </div>
+</div>
+</div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
