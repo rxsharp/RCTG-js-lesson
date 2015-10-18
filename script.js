@@ -1,18 +1,36 @@
+//Main coding tips
+var arrayTips = [
+{"tip":"Design every page as a landing page."},
+{"tip":"Make appealing form buttons"},
+{"tip":"Learn how to use google"},
+ {"tip":"Dry = Don't Repeat Yourself"},
+  {"tip":"When starting a new project, design it in shades of gray and add color later"}
+  
+];
+
+//Random number from the length of the array AND display of coding tip
+function randomTip() {
+var result = Math.floor((Math.random()*arrayTips.length) +1);
+document.getElementById("random-tip").innerHTML = arrayTips[result].tip;
+
+var rTipHighlight = document.querySelector("#random-tip");
+rTipHighlight.style.display = "inline";
+}
+
 //Random number from the length of the array
+function randomNumLength() {
+var result = Math.floor((Math.random()*arrayTips.length) +1);
+document.getElementById("random-num-length").innerHTML = result;
+
+}
+
+//Length of array
 function arrayLength() {
 document.getElementById("generateArrayNum").innerHTML = "Array Length: " +arrayTips.length;
 }
 function arrayLastGen() {
 document.getElementById("generateLastTip").innerHTML = "Last Tip of the list: " + arrayTips[arrayTips.length - 1].tip;
 }
-
-var arrayTips = [
-{"tip":"Design every page as a landing page."},
-{"tip":"Make appealing form buttons"},
-{"tip":"Learn how to use google"},
- {"tip":"Dry = Don't Repeat Yourself"}
-];
-
 
 // Math.random() => random decimal number.
 //Math.floor(1.6) => 6. The method rounds downward
