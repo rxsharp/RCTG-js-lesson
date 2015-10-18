@@ -1,4 +1,21 @@
+//Random number from the length of the array
+function arrayLength() {
+document.getElementById("generateArrayNum").innerHTML = "Array Length: " +arrayTips.length;
+}
+function arrayLastGen() {
+document.getElementById("generateLastTip").innerHTML = "Last Tip of the list: " + arrayTips[arrayTips.length - 1].tip;
+}
+
+var arrayTips = [
+{"tip":"Design every page as a landing page."},
+{"tip":"Make appealing form buttons"},
+{"tip":"Learn how to use google"},
+ {"tip":"Dry = Don't Repeat Yourself"}
+];
+
+
 // Math.random() => random decimal number.
+//Math.floor(1.6) => 6. The method rounds downward
 function randomNumber() {
 var result = Math.floor((Math.random()*10) +1);
 document.getElementById("random").innerHTML = result;

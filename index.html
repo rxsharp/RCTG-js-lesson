@@ -8,6 +8,7 @@
 </head>
 <body>
 <h1 class = "title">JSON & JavaScript</h1>
+<div class="json-section">
 <h2>JSON Key value pair data</h2>
 <p class="description">Json data is written with name and value pairs.</p>
 <div class="container-fluid">
@@ -27,7 +28,9 @@
   </div>
 </div>
 </div>
+</div> <!--END OF json-section-->
 
+<div class="random-number-section">  
 <h2>JS Random Number Generator</h2>
 <div class="container-fluid">
 <div class="row">
@@ -40,6 +43,31 @@
   <p><strong>Example:</strong> Generate random number, 1 to 20</p>
 <button class= "num-btn" onclick="randomNumber20()">Try it</button>
 <p class = "random-result" id="random20"></p>
+  </div>
+</div>
+</div>
+</div> <!--END OF random-number-section-->
+  
+<h3>Find the length of an array</h3>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-xs-6">
+  <button class = "btn-in" onclick="arrayLength()">Try it</button>
+  </div>
+  <div class="col-xs-6">
+  <p id="generateArrayNum" class = "arrayresult"></p>
+  </div>
+</div>
+</div>
+
+<h3>Find the most recent(last) tip in array</h3>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-xs-6">
+  <button class = "btn-in" onclick="arrayLastGen()">Try it</button>
+  </div>
+  <div class="col-xs-6">
+  <p id="generateLastTip" class = "arrayresult"></p>
   </div>
 </div>
 </div>
